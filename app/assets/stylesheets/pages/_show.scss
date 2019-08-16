@@ -1,0 +1,94 @@
+.header {
+  background-color: #cfdaf0;
+  height: 400px;
+  display: inline-block;
+  text-align:left;
+  width: 400px;
+}
+
+.header h1 {
+  font-size: 70px;
+  padding-bottom: 30px;
+}
+
+.header h2{
+  font-size: 60px;
+}
+
+.des p{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.des {
+  border: 7px solid #cfdaf0;
+  width: 900px;
+  margin: 0px auto;
+  margin-top: -40px;
+  margin-bottom: 100px;
+}
+
+.ingredient {
+  background-color: #cfdaf0;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.ingredient:hover{
+  background-color: #c5d1ea;
+}
+
+.container ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.ing {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.amount {
+  font-size: 20px;
+  font-style: italic;
+  margin: 0px;
+}
+
+button {
+  margin: 0px;
+  color: white;
+}
+
+.ing_head {
+  font-size: 60px;
+  font-style: italic;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.list_button{
+  width:200px;
+}
+
+.add {
+  width: 900px;
+  text-align: center;
+  height: 59.31px;
+}
+
+.distance {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+

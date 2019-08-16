@@ -1,0 +1,29 @@
+<div class="banner">
+  <div class="header">
+    <h1><%= @cocktail.name %></h1>
+    <h2><i><%= @cocktail.feeling %></i></h2>
+  </div>
+</div>
+
+<div class="des">
+<p><i>"<%= @cocktail.description %>"</i></p>
+</div>
+
+<h2 class="ing_head">Ingredients</h2>
+
+<div class="container">
+  <ul>
+  <% @doses.each do |d| %>
+      <% ingredient = Ingredient.find(d[:ingredient_id]) %>
+    <li class="ingredient">
+      <div><p class="ing"><%= ingredient[:name] %></p></div>
+      <div><p class="amount"><%= d.description %></p></div>
+      <%= link_to "Delete", cocktail_dose_path(@cocktail, d), class:"btn-flat list_button", method: :delete, data: { confirm: "Are you sure?" } %></button>
+    </li>
+  <% end %>
+  </ul>
+<button class="btn-flat add"><%= link_to "Add an Ingredient", new_cocktail_dose_path(@cocktail)%></button>
+</div>
+
+<button class="btn-flat large"><%= link_to "See all Cocktails", cocktails_path%></button>
+
