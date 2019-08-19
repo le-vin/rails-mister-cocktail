@@ -1,17 +1,18 @@
-<div class="banner">
+<div class="banner" style="background-image: url('<%= image_path "rollercoaster.jpg"%>')">
   <div id="header">
     <h1>Cocktails</h1>
     <h2>to match <br> your feelings</h2>
   </div>
 </div>
+<p class="love">The purpose of this website is to help you find a cocktail that suits your current mood. For every feeling there is a cocktail that will improve your quality of life a lot.</p>
 <div class="container grid">
 <% @cocktails.each do |c| %>
   <%= link_to cocktail_path(c),class: "link", :action => 'go' do %>
     <div class="card">
-      <img src="https://source.unsplash.com/random" alt="random">
+      <%= cl_image_tag c.photo, crop: :fill%>
       <div class="cock">
         <h3><%=c.name%></h3>
-        <p><%= c.feeling %></p>
+        <h3><i><%= c.feeling %></i></p>
       </div>
     </div>
   <% end %>

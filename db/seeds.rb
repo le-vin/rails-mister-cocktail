@@ -5,12 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Ingredient.delete_all
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
+
 Ingredient.create(name: "Rum")
 Ingredient.create(name: "Vodka")
 Ingredient.create(name: "Tiquila")
+Ingredient.create(name: "Lemon")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Mint leaves")
+Ingredient.create(name: "Coca Cola")
+Ingredient.create(name: "Soda")
+Ingredient.create(name: "Tonic Water")
+Ingredient.create(name: "Orange Juice")
+Ingredient.create(name: "Sugar")
+Ingredient.create(name: "Ginger Beer")
 
 puts "We have #{Ingredient.count} Ingredients!"

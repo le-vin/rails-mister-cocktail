@@ -39,11 +39,16 @@
   transition: all 0.3s ease;
 }
 
+.containers {
+  width: 900px;
+  margin: 0px auto;
+  padding: 0px;
+}
 .ingredient:hover{
   background-color: #c5d1ea;
 }
 
-.container ul {
+.containers ul {
   padding: 0px;
   margin: 0px;
 }

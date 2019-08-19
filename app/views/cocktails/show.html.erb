@@ -1,4 +1,5 @@
-<div class="banner">
+<div class="banner" style="background-image: url('<%= cl_image_path @cocktail.photo%>')">
+
   <div class="header">
     <h1><%= @cocktail.name %></h1>
     <h2><i><%= @cocktail.feeling %></i></h2>
@@ -11,7 +12,7 @@
 
 <h2 class="ing_head">Ingredients</h2>
 
-<div class="container">
+<div class="containers">
   <ul>
   <% @doses.each do |d| %>
       <% ingredient = Ingredient.find(d[:ingredient_id]) %>
@@ -26,4 +27,6 @@
 </div>
 
 <button class="btn-flat large"><%= link_to "See all Cocktails", cocktails_path%></button>
+
+
 
